@@ -3,6 +3,7 @@ console.log('***** Cart Functions *****');
 // We want to see how you are testing your code!!!
 let basket =[]
 console.log(basket);
+let i = 0;
 
 function addItem( item ){
 console.log( 'In addItem ', item );
@@ -13,9 +14,17 @@ return true;
 
 function listItems(){
     console.log( 'In listItems', basket);
-
+while(i < basket.length){
+    console.log(basket[i]);
+    i++
+    
+}
 } //end listItems
 
+function empty(){
+    let basket = [];
+    console.log(basket);
+}
 
 
 
